@@ -1,0 +1,199 @@
+/* ===========================
+   SHOWCASE
+=========================== */
+
+.showcase{
+  padding:100px 20px;
+  background:var(--light);
+}
+
+.showcase-header{
+  max-width:700px;
+  margin:0 auto 60px;
+  text-align:center;
+}
+
+.section-tag{
+  display:inline-block;
+  padding:8px 18px;
+  border-radius:999px;
+  background:rgba(74,175,232,.12);
+  color:var(--blue-dark);
+  font-weight:700;
+  font-size:.85rem;
+  letter-spacing:.5px;
+  margin-bottom:18px;
+}
+
+.showcase-header h2{
+  font-size:clamp(2.2rem,5vw,3.8rem);
+  color:var(--brown);
+  line-height:1.1;
+  margin-bottom:18px;
+}
+
+.showcase-header h2 span{
+    color:var(--blue);
+}
+
+.showcase-header p{
+  color:var(--text);
+  font-size:1.05rem;
+  line-height:1.8;
+}
+
+/* ===========================
+   MAIN IMAGE
+=========================== */
+
+.showcase-main{
+  max-width:1000px;
+  margin:auto;
+}
+
+.showcase-image{
+
+    background:linear-gradient(
+        180deg,
+        #ffffff,
+        #fcfbf8
+    );
+
+    border-radius:34px;
+
+    padding:50px;
+
+    border:1px solid rgba(74,175,232,.12);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.08);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    min-height:460px;
+
+    transition:.35s ease;
+}
+
+.showcase-image img{
+
+    width:min(100%,560px);
+
+    opacity:1;
+
+    transition:
+
+        opacity .18s ease,
+
+        transform .30s ease;
+
+    filter:
+        drop-shadow(0 30px 45px rgba(0,0,0,.16))
+        drop-shadow(0 60px 70px rgba(74,175,232,.08));
+
+}
+
+.showcase-image:hover img{
+
+    transform:
+        translateY(-8px)
+        scale(1.03);
+
+}
+
+/* ===========================
+   THUMBNAILS
+=========================== */
+
+.thumbnail-row{
+  max-width:1000px;
+  margin:35px auto 0;
+
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.thumb{
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:14px;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+    box-shadow:
+        0 10px 24px rgba(0,0,0,.05);
+
+}
+
+.thumb img{
+  width:100%;
+  display:block;
+}
+
+.thumb:hover{
+  transform:translateY(-5px);
+}
+
+.thumb.active{
+
+    border-color:var(--blue);
+
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 18px 40px rgba(74,175,232,.18);
+
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(min-width:768px){
+
+.thumbnail-row{
+grid-template-columns:repeat(5,1fr);
+}
+
+}
+
+/* ===========================
+   DESKTOP
+=========================== */
+
+@media(min-width:992px){
+
+.showcase{
+    padding:130px 40px;
+}
+
+.showcase-image{
+    padding:70px;
+    min-height:620px;
+}
+
+.showcase-image img{
+    width:700px;
+}
+
+}
+
+.fade{
+
+    opacity:0;
+
+    transform:
+        scale(.96);
+
+}

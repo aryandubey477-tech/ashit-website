@@ -1,11 +1,12 @@
 import { useState } from "react";
 
-import front from "./assets/front.png";
-import back from "./assets/back.png";
-import side from "./assets/side.png";
-import top from "./assets/top.png";
-import openBox from "./assets/open-box.png";
-import lifestyle from "./assets/lifestyle.png";
+import front from "../assets/front.png";
+import back from "../assets/back.png";
+import side from "../assets/side.png";
+import top from "../assets/top.png";
+import hero from "../assets/hero.png";
+import lifestyle from "../assets/lifestyle.png";
+import openBox from "../assets/open-box.png";
 
 function Gallery() {
   const images = [
@@ -53,11 +54,13 @@ function Gallery() {
       </p>
 
       <div className="gallery-main">
-        <img
-          src={selected.src}
-          alt={selected.title}
-        />
-      </div>
+  <img
+    key={selected.title}
+    src={selected.src}
+    alt={selected.title}
+    className="gallery-image"
+  />
+</div>
 
       <div className="gallery-grid">
         {images.map((image) => (

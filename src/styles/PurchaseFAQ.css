@@ -1,0 +1,51 @@
+.purchase-faq{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:var(--space-xl) 20px;
+
+}
+
+.faq-container{
+    margin-top:50px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.faq-item{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(75,53,42,.08);
+}
+
+.faq-question{
+    width:100%;
+    border:none;
+    background:none;
+    cursor:pointer;
+    padding:24px 28px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:1.05rem;
+    font-weight:600;
+    color:var(--brown);
+}
+
+.faq-answer{
+    padding:0 28px 24px;
+}
+
+.faq-answer p{
+    color:var(--text);
+    line-height:1.8;
+}
+
+.rotate{
+    transform:rotate(180deg);
+    transition:.3s;
+}
