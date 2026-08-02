@@ -49,3 +49,50 @@
     transform:rotate(180deg);
     transition:.3s;
 }
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:767px){
+
+    .purchase-faq{
+        padding:90px 20px;
+    }
+
+    .faq-container{
+        margin-top:36px;
+        gap:14px;
+    }
+
+    .faq-item{
+        border-radius:18px;
+    }
+
+    .faq-question{
+
+        padding:18px 20px;
+
+        font-size:1rem;
+
+        text-align:left;
+
+        gap:14px;
+
+    }
+
+    .faq-answer{
+
+        padding:0 20px 20px;
+
+    }
+
+    .faq-answer p{
+
+        font-size:.95rem;
+
+        line-height:1.7;
+
+    }
+
+}

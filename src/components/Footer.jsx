@@ -9,35 +9,33 @@ export default function Footer() {
       <div className="footer-container">
 
         <Link to="/">
-  <img
-    src={logo}
-    alt="Ash It"
-    className="footer-logo"
-  />
-</Link>
+          <img
+            src={logo}
+            alt="Ash It"
+            className="footer-logo"
+          />
+        </Link>
 
         <h3>Ash It</h3>
 
         <p>
-  Cleaner ash disposal for home,
-  travel and everyday use.
-</p>
+          Cleaner ash disposal for home,
+          travel and everyday use.
+        </p>
 
-<p>
-  Cleaner ash disposal for home,
-  travel and everyday use.
-</p>
+        <a
+          href="mailto:teamashit@gmail.com"
+          className="footer-email"
+        >
+          teamashit@gmail.com
+        </a>
 
-<a
-  href="mailto:teamashit@gmail.com"
-  className="footer-email"
->
-  teamashit@gmail.com
-</a>
-
-<div className="footer-links">
-  <a href="#faq">FAQ</a>
-</div>
+        <div className="footer-links">
+          <a href="#home">Home</a>
+          <a href="#showcase">Product</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#faq">FAQ</a>
+        </div>
 
         <span>
           © 2026 Ash It. All rights reserved.

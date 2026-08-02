@@ -54,3 +54,53 @@
   color:var(--text);
   line-height:1.8;
 }
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:767px){
+
+  .faq{
+    padding:90px 20px;
+  }
+
+  .faq-header{
+    margin-bottom:40px;
+  }
+
+  .faq-header h2{
+    font-size:2.4rem;
+    line-height:1.15;
+  }
+
+  .faq-header p{
+    font-size:1rem;
+  }
+
+  .faq-container{
+    width:100%;
+  }
+
+  .faq-item{
+    border-radius:18px;
+    margin-bottom:14px;
+  }
+
+  .faq-question{
+    padding:18px;
+    font-size:1rem;
+    text-align:left;
+    gap:16px;
+  }
+
+  .faq-answer{
+    padding:0 18px 18px;
+  }
+
+  .faq-answer p{
+    font-size:.95rem;
+    line-height:1.7;
+  }
+
+}

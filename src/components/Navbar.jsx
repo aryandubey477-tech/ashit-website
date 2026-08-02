@@ -22,7 +22,9 @@ function Navbar() {
           <a href="#home">Home</a>
 <a href="#showcase">Product</a>
 <a href="#how-it-works">How It Works</a>
-<a href="#faq" onClick={() => setMenuOpen(false)}></a>
+<a href="#faq" onClick={() => setMenuOpen(false)}>
+  FAQ
+</a>
 <a href="#footer">Contact</a>
         </nav>
 

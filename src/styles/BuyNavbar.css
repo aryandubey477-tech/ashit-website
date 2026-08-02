@@ -125,3 +125,67 @@
     color:white;
 
 }
+
+/* ===========================
+   MOBILE NAVBAR
+=========================== */
+
+@media (max-width:767px){
+
+    .buy-navbar{
+
+        width:calc(100% - 20px);
+
+        top:12px;
+
+    }
+
+    .buy-nav-container{
+
+        height:64px;
+
+        padding:0 14px;
+
+    }
+
+    .buy-logo img{
+
+        width:38px;
+
+    }
+
+    .buy-logo h2{
+
+        font-size:1.25rem;
+
+    }
+
+    /* Hide navigation links */
+
+    .buy-nav-links{
+
+        display:none;
+
+    }
+
+    /* Smaller Buy button */
+
+    .buy-nav-button{
+
+        padding:10px 16px;
+
+        font-size:.9rem;
+
+        gap:6px;
+
+    }
+
+    .buy-nav-button svg{
+
+        width:16px;
+
+        height:16px;
+
+    }
+
+}

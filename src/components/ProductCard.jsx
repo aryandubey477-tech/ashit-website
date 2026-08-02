@@ -24,17 +24,7 @@ export default function ProductCard() {
             alt="Ash It Pack of 3"
           />
 
-          <div className="product-rating">
-
-    ★★★★★
-
-    <span>
-
-        Trusted by Early Customers
-
-    </span>
-
-</div>
+       
 
         </div>
 
